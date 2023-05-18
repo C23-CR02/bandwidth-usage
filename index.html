@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bandwidth Usage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Bandwidth Usage</h1>
+    <form id="data-form">
+      <label for="app-key">app-key:</label>
+      <input type="text" id="app-key" name="app-key" required />
+
+      <label for="secret-key">secret-key:</label>
+      <input type="text" id="secret-key" name="secret-key" required />
+
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" name="start-date" required />
+
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" name="end-date" required />
+
+      <label for="vm-id">VM ID:</label>
+      <input type="text" id="vm-id" name="vm-id" required />
+      <!-- <label for="bearer">bearer :</label>
+      <input type="text" readonly id="bearer" name="bearer" /> -->
+
+      <button type="submit">Get Data</button>
+    </form>
+
+    <table id="example">
+      <thead>
+        <tr>
+          <th>Usage</th>
+          <th>Cost</th>
+          <th>Date</th>
+          <th>Hour</th>
+          <th>Type</th>
+          <th>converted_date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically populated -->
+      </tbody>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>
